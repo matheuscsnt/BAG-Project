@@ -1,0 +1,21 @@
+main {
+    background-color: white;
+    width: 560px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473);
+    border-radius: 15px;
+    font-family: sans-serif;
+}
+
+header {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#sobre {
+    font-size: 12px;
+    text-align: center;
+}
