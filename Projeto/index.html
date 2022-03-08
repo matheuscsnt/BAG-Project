@@ -15,9 +15,35 @@
             O projeto vem da necessidade de calcular os ganhas com entregas por aplicativo, os gastos e lucro também serão calculados e retornado.
         </div>
 
-        <!--
-            aqui embaixo vai ficar a parte do formulário que vou fazer mais tarde de acordo com as necessidades para calculo e logo após aprender a usar o js com form.
-        -->
+        <div class="box">
+            <form action="">
+                <fieldset>
+                    <legend><b>Ganhos e preojeção</b></legend>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="ganhos" id="ganhos" class="inputUser" required>
+                        <label for="ganhos">Ganhos do dia <!-- aqui vou inserir um getdate ou algo assim --></label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="gastos" id="gastos" class="inputUser" required>
+                        <label for="gastos">Gastos do dia <!-- aqui vou inserir um getdate ou algo assim --></label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="tempoOnline" id="tempoOnline" class="inputUser" required>
+                        <label for="tempoOnline">Tempo online hoje, <!-- aqui vou inserir um getdate ou algo assim --></label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="viagens" id="viagens" class="inputUser" required>
+                        <label for="viagens">Viagens do dia <!-- aqui vou inserir um getdate ou algo assim --></label>
+                    </div>
+                    <br><br>
+                    <input type="submit" name="submit" id="submit">
+                </fieldset>
+            </form>
+        </div>
 
     </main>    
 </body>
