@@ -101,20 +101,19 @@ section{
 section h2{
 	font-size: 12px;
 	display: block;
-	padding-bottom: .5em;
+	padding-bottom: .2em;
 	border-bottom: 1px solid #ccc;
-	margin-bottom: .5em;
+	margin-bottom: .2em;
 }
 
 table{
 	width: 100%;
-	margin-bottom : .5em;
+	margin-bottom : .3em;
     table-layout: fixed;
-
 }
 
 td, th {
-	padding: .7em;
+	padding: .4em;
 	margin: 0;
 	border: 1px solid #ccc;
 	text-align: center;
