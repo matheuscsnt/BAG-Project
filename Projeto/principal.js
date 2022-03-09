@@ -25,7 +25,13 @@ botaoSubmit.addEventListener("click", function(){
     tempoOnlineTd.textContent = tempoOnline;
     viagensTd.textContent = viagens;
 
-    
+    dadosTr.appendChild(ganhosTd);
+    dadosTr.appendChild(gastosTd);   
+    dadosTr.appendChild(tempoOnlineTd);
+    dadosTr.appendChild(viagensTd);
 
+    var tabela = document.querySelector("#dados-colhidos");
+    tabela.appendChild(dadosTr);
+    
 
 });
