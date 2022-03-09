@@ -1,5 +1,6 @@
 var botaoSubmit = document.querySelector("#submit");
-botaoSubmit.addEventListener("click", function(){
+botaoSubmit.addEventListener("click", function(event){
+    event.preventDefault();
 
     var form = document.querySelector("#form-adiciona");
 
