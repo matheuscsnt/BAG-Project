@@ -25,6 +25,11 @@ botaoSubmit.addEventListener("click", function(event){
     dadosTr.appendChild(tempoOnlineTd);
     dadosTr.appendChild(viagensTd);
 
+    if(!validaDia(dia)){
+        console.log("Dia inválido.")
+        return;
+    }
+
     var tabela = document.querySelector("#dados-colhidos");
     tabela.appendChild(dadosTr);
 });
