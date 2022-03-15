@@ -27,18 +27,40 @@ botaoSubmit.addEventListener("click", function(event){
 
     var tabela = document.querySelector("#dados-colhidos");
     tabela.appendChild(dadosTr);
-    
-
 });
 
 function obtemInfosDoForm(form){
-
     var dia = {
         ganhos: form.ganhos.value,
         gastos: form.gastos.value,
         tempoOnline: form.tempoOnline.value,
         viagens: form.viagens.value
     }
-
     return dia;
+}
+
+function validaDia(dia){
+    if(dia.ganhos >= 0){
+        return true;
+    }else{
+        return false;
+    }
+
+    if(dia.gastos >= 0){
+        return true;
+    }else{
+        return false;
+    }
+
+    if(dia.tempoOnline >= 0){
+        return true;
+    }else{
+        return false;
+    }
+
+    if(dia.viagens >= 0){
+        return true;
+    }else{
+        return false;
+    }
 }
