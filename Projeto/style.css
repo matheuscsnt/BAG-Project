@@ -59,7 +59,7 @@ legend {
 }
 
 #submit {
-    background-image: linear-gradient(to right, gray, lightgray);
+    background-color: #708090;
     width: 100%;
     border: none;
     padding: 15px;
