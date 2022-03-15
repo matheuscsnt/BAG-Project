@@ -3,16 +3,10 @@ botaoSubmit.addEventListener("click", function(event){
     event.preventDefault();
 
     var form = document.querySelector("#form-adiciona");
+// Extraindo informações do form
+    var dia = obtemInfosDoForm(form);
 
-    var ganhos = form.ganhos.value;
-    var gastos = form.gastos.value;
-    var tempoOnline = form.tempoOnline.value;
-    var viagens = form.viagens.value;
-
-    console.log(ganhos);
-    console.log(gastos);
-    console.log(tempoOnline);
-    console.log(viagens);
+    console.log(dia);
 
     var dadosTr = document.createElement("tr");
 
@@ -36,3 +30,15 @@ botaoSubmit.addEventListener("click", function(event){
     
 
 });
+
+function obtemInfosDoForm(form){
+
+    var dia = {
+        ganhos: form.ganhos.value,
+        gastos: form.gastos.value,
+        tempoOnline: form.tempoOnline.value,
+        viagens: form.viagens.value
+    }
+
+    return dia;
+}
